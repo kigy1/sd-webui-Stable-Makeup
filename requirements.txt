@@ -1,0 +1,4 @@
+dlib
+diffusers
+git+https://github.com/andresprados/SPIGA
+git+https://github.com/sajjjadayobi/FaceLib.git
