@@ -12,6 +12,8 @@ This extension has advantages over the original Stable-Makeup, such as working w
 
 ![webui-vs-orginal](https://github.com/kigy1/sd-webui-Stable-Makeup/assets/136764953/ab618e8f-79d4-49d6-a1e0-873c4a4d7e07)
 
+![Screenshot 2024-05-23 005128](https://github.com/kigy1/sd-webui-Stable-Makeup/assets/136764953/a229d5f2-b23f-48eb-b7b8-0ae5d029aba7)
+
 ## Installation
 
 1. Open the Extensions tab.
