@@ -25,3 +25,9 @@ This extension has advantages over the original Stable-Makeup, such as working w
 1. The first installation will take some time.
 2. Also, add `--disable-safe-unpickle` to `webui-user.bat` next to `COMMANDLINE_ARGS` (I wish if someone can help me fix this).
 3. Don't use `--no-half`, as this will make it slower.
+
+## To-Do List
+
+- [ ] Make it work with many faces
+- [ ] Make it faster by adding an option to downscale images
+- [ ] Make it work with Stable Diffusion WebUI model (need someone to help with that)
