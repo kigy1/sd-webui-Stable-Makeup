@@ -33,3 +33,4 @@ This extension has advantages over the original Stable-Makeup, such as working w
 - [ ] Make it work with many faces
 - [ ] Make it faster by adding an option to downscale images
 - [ ] Make it work with Stable Diffusion WebUI model (need someone to help with that)
+- [ ] Try to remove box from some photos by adding seg (for now, if you face this issue, upscale the image)
