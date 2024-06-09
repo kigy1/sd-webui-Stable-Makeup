@@ -37,7 +37,25 @@ base_path = os.path.join(os.path.dirname(__file__), "..", "models")
 makeup_encoder_path = os.path.join(base_path, "pytorch_model.bin")
 id_encoder_path = os.path.join(base_path, "pytorch_model_1.bin")
 pose_encoder_path = os.path.join(base_path, "pytorch_model_2.bin")
-snapshot_download(repo_id="kigy1/Stable-Makeup" , local_dir=base_path)
+
+# URL for manual download
+manual_download_url = "https://huggingface.co/kigy1/Stable-Makeup"
+# Check if the file pytorch_model.bin exists
+if not os.path.isfile(makeup_encoder_path):
+    try:
+        # Try downloading the model
+        snapshot_download(repo_id="kigy1/Stable-Makeup", local_dir=base_path)
+    except Exception as e:
+        print("First download attempt failed, trying alternative method.")
+        try:
+            # Try the alternative method
+            snapshot_download(repo_id="kigy1/Stable-Makeup", local_dir=base_path, use_symlinks=False)
+        except Exception as e:
+            print("Both download attempts failed. Please download the model manually from the following URL put the three model inside sd-webui-Stable-Makeup\models:")
+            print(manual_download_url)
+            traceback.print_exc()
+else:
+    print(f"The file {makeup_encoder_path} already exists. Skipping download.")
 
 Unet = OriginalUNet2DConditionModel.from_pretrained(model_id, subfolder="unet").to("cuda")
 id_encoder = ControlNetModel.from_unet(Unet)
