@@ -21,12 +21,14 @@ This extension has advantages over the original Stable-Makeup, such as working w
 3. Enter the URL for the extension's git repository.
 4. Click Install.
 5. Restart WebUI.
+6. sometimes at first you need to run automatic1111 two times or more to install and download the necessary
 
 ### Important Notes:
 
 1. The first installation will take some time.
 2. Also, add `--disable-safe-unpickle` to `webui-user.bat` next to `COMMANDLINE_ARGS` (I wish if someone can help me fix this).
 3. Don't use `--no-half`, as this will make it slower.
+4. sometimes at first you need to run automatic1111 two times or more to install and download the necessary
 
 ## To-Do List
 
